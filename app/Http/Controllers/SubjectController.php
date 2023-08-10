@@ -38,7 +38,7 @@ class SubjectController extends Controller
     public function show($id)
     {
         $subject = Subject::find($id);
-        return view('contacts.show')->with('contacts', $subject);
+        return view('subjects.show')->with('subjects', $subject);
     }
 
     public function edit($id)
