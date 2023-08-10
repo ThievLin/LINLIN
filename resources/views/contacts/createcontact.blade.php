@@ -8,6 +8,18 @@
       <form action="{{ url('contact') }}" method="post">
         {!! csrf_field() !!}
        
+
+        <label for="category">Name</label> 
+        <a  href="#" data-toggle="tooltip" data-html="true" data-original-title="<em> Add New </em>"><i class="cil-plus"></i></a>
+        <br>
+        <br>
+          <select class="form-control" name="stu_id">
+              @foreach($students as $value)
+                <option value="{{$value->id}}">{{$value->lastname}}</option>                                     
+              @endforeach
+          </select>
+
+
         <br><label>Address</label><br>
         <br><input type="text" name="address" id="address" class="form-control">
 

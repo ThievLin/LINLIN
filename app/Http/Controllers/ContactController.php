@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Student;
 
 class ContactController extends Controller
 {
@@ -11,12 +12,14 @@ class ContactController extends Controller
     public function index()
     {
         $contacts = Contact::all();
-        return view ('contacts.index')->with('contacts',$contacts);
+        $students = Student::all();
+        return view ('contacts.index', ['contacts' => $contacts, 'students' => $students]);
     }
 
     public function create()
     {
-        return view('contacts.createcontact');
+        $data = Student::all();
+        return view('contacts.createcontact', ['students'=>$data] );
     }
 
     public function store(Request $request)

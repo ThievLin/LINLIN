@@ -7,6 +7,7 @@
        
       <form action="{{ url('student') }}" method="post">
         {!! csrf_field() !!}
+
         
         <br><label>firstname</label><br>
         <br><input type="text" name="firstname" id="firstname" class="form-control">
@@ -43,7 +44,19 @@
           @if ($errors->has('dob'))
             <span class="text-danger">{{ $errors->first('dob') }}</span><br>
           @endif
+        
+          <br>
+          <br>
 
+          <label for="category">Skill</label> 
+          <br>
+        <a  href="#" data-toggle="tooltip" data-html="true" data-original-title="<em> Add New </em>"><i class="cil-plus"></i></a>
+        <br>
+          <select class="form-control" name="subject_id">
+              @foreach($subjects as $value)
+                <option value="{{$value->id}}">{{$value->Skill}}</option>                                       
+              @endforeach
+          </select>
 
         <br><input type="submit" value="Save" class="btn btn-success"><br>
       </form>

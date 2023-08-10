@@ -4,18 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
+use App\Models\Subject;
 
 class StudentController extends Controller
 {
     public function index()
     {
         $students = student::all();
-        return view ('students.index')->with('students',$students);
+        $subjects = Subject::all();
+        return view ('students.index', ['students' => $students, 'subjects' => $subjects]);
     }
 
     public function create()
     {
-        return view('students.create');
+        $data = Subject::all();
+        return view('students.create', ['subjects'=>$data] );
     }
 
     public function store(Request $request)

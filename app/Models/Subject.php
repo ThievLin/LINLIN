@@ -10,5 +10,5 @@ class Subject extends Model
     use HasFactory;
     protected $table = 'subjects';
     protected $primarykey = 'id';
-    protected $fillable = ['Skill', 'time','teacher'];
+    protected $fillable = ['Skill', 'time','teacher','stu_id'];
 }
