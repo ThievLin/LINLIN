@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h2> For Students</h2>
+                        <h2>Students</h2>
                         <br>
                         <br>
                         <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Add New Student">
