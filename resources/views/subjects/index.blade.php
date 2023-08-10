@@ -33,9 +33,9 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Skill</th>
-                                            <th>time</th>
-                                            <th>teacher</th>
+                                            <th>Subject </th>
+                                            <th>Time for study</th>
+                                            <th>Teacher name</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>

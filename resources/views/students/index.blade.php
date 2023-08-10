@@ -24,7 +24,7 @@
                         <br>
                         <div class="card-body">
                             <a href="{{ url('/student/create') }}" class="btn btn-success btn-sm" title="Add New Student">
-                                Add New
+                                Add New students
                             </a>
                             
                             <br/>
@@ -34,11 +34,11 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>firstname</th>
-                                            <th>lastname</th>
-                                            <th>gender</th>
-                                            <th>age</th>
-                                            <th>dob</th>
+                                            <th>Firstname</th>
+                                            <th>Lastname</th>
+                                            <th>Gender</th>
+                                            <th>Age</th>
+                                            <th>Date of birst</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>

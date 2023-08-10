@@ -34,9 +34,9 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>address</th>
-                                            <th>email</th>
-                                            <th>phone</th>
+                                            <th>Address</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>

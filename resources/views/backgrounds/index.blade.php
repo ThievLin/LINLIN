@@ -25,8 +25,7 @@
                         <div class="card-body">
                             <a href="{{ url('/background/create') }}" class="btn btn-success btn-sm" title="Add New Student">
                                 Add New Background Students
-                            </a>
-                            
+                            </a>     
                             <br/>
                             <br/>
                             <div class="table-responsive">
@@ -34,9 +33,8 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            {{-- <th>student_id</th> --}}
-                                            <th>highschool</th>
-                                            <th>graduate</th>
+                                            <th>Highschool</th>
+                                            <th>Year graduate</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -44,7 +42,6 @@
                                         @foreach($backgrounds as $item)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                {{-- <td>{{ $item->student_id }}</td> --}}
                                                 <td>{{ $item->highschool }}</td>
                                                 <td>{{ $item->graduate }}</td>
                                                 
