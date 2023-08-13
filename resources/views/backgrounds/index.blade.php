@@ -8,14 +8,16 @@
                         <h2>Background Students</h2>
                         <br>
                         <br>
+                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
+                            Subject
+                        </a>
+                        <br>
+                        <br>
                         <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Student
                         </a>
                         <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Contact
-                        </a>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
-                            Subject
                         </a>
                         <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Background

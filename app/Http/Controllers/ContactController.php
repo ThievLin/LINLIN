@@ -27,7 +27,7 @@ class ContactController extends Controller
         // dd($request->all());
     $request->validate([
                 'address' => 'required',
-                'email' => 'required',
+                'email' => 'required|email',
                 'phone' => 'required',
     ]);
 

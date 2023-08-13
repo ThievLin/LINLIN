@@ -10,7 +10,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = student::all();
+        $students = Student::all();
         $subjects = Subject::all();
         return view ('students.index', ['students' => $students, 'subjects' => $subjects]);
     }
@@ -31,9 +31,19 @@ class StudentController extends Controller
         'dob' => 'required',
     ]);
 
-        // $input = $request->all();
-
+        // dd($request->file());
         $input = $request->all();
+
+        if($request->hasFile('image'))
+        {
+            $destination_path = 'public/images/students';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->StoreAs($destination_path,$image_name);
+
+            $input['image']= $image_name;
+        }
+
         Student::create($input);
         return redirect('student')->with('flash_message' , 'Student Addedd!');
 }
@@ -59,6 +69,7 @@ class StudentController extends Controller
             'gender' => 'required',
             'age' => 'required',
             'dob' => 'required',
+            'image' => 'required',
         ]);
         $student = Student::find($id);
         $input = $request->all();

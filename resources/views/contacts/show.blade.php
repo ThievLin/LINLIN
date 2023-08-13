@@ -6,8 +6,10 @@
   <div class="card-body">
         <div class="card-body">
         <h6 class="card-text">Address : {{ $contacts->address }}</h6>
-        <h6 class="card-text">email : {{ $contacts->email }}</h6>
-        <h6 class="card-text">phone : {{ $contacts->phone }}</h6>
+        <h6 class="card-text">Email : {{ $contacts->email }}</h6>
+        <h6 class="card-text">Phone : {{ $contacts->phone }}</h6>
+        <br>
+        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student"> Back </a>
 
   </div>
     <hr>

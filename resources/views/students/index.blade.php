@@ -8,15 +8,18 @@
                         <h2> Laravel 9 CRUD (Students Information)</h2>
                         <br>
                         <br>
+                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
+                            Subject
+                        </a>
+                        <br>
+                        <br>
                         <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Student
                         </a>
                         <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Contact
                         </a>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
-                            Subject
-                        </a>
+                        
                         <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Add New Student">
                             Background
                         </a>
@@ -24,7 +27,7 @@
                         <br>
                         <div class="card-body">
                             <a href="{{ url('/student/create') }}" class="btn btn-success btn-sm" title="Add New Student">
-                                Add New students
+                                Add New students 
                             </a>
                             
                             <br/>
@@ -38,7 +41,8 @@
                                             <th>Lastname</th>
                                             <th>Gender</th>
                                             <th>Age</th>
-                                            <th>Date of birst</th>
+                                            <th>Date of Birst</th>
+                                            <th>Image</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -51,8 +55,10 @@
                                                 <td>{{ $item->gender }}</td>
                                                 <td>{{ $item->age }}</td>
                                                 <td>{{ $item->dob }}</td>
+                                                <td>
+                                                    <img src="{{ asset('/storage/images/students/'.$item->image) }}" width= '50' height='50' />
+                                                </td>
                                                 
-          
                                                 <td>
                                                     <a href="{{ url('/student/' . $item->id) }}"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                                     <a href="{{ url('/student/' . $item->id . '/edit') }}"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>

@@ -47,6 +47,14 @@
                 <span class="text-danger">{{ $errors->first('dob') }}</span><br>
               @endif
 
+        <br><label>Image</label><br>
+        <br><input type="file" name="image" id="image" class="form-control">
+    
+              @if ($errors->has('image'))
+                <span class="text-danger">{{ $errors->first('image') }}</span><br>
+              @endif
+
+      <br>
       <br><input type="submit" value="Save" class="btn btn-success"><br>
       
       </form>
