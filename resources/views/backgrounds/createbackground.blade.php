@@ -16,10 +16,6 @@
                 <option value="{{$value->id}}">{{$value->firstname}} {{$value->lastname}}</option>                                       
               @endforeach
           </select>
-
-          @if ($errors->has('student_id'))
-            <span class="text-danger">{{ $errors->first('student_id') }}</span><br>
-          @endif
           
         <br><label>Highschool</label><br>
         <br><input type="text" name="highschool" id="highschool" class="form-control">

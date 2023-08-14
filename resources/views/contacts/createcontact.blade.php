@@ -14,10 +14,10 @@
         <br>
         <br>
           <select class="form-control" name="stu_id">
-              @foreach($students as $value)
-                <option value="{{$value->id}}">{{$value->firstname}} {{$value->lastname}}</option>                                     
-              @endforeach
-          </select>
+            @foreach($students as $value)
+              <option value="{{$value->id}}">{{$value->firstname}} {{$value->lastname}}</option>                                       
+            @endforeach
+        </select>
 
         <br><label>Address</label><br>
         <br><input type="text" name="address" id="address" class="form-control">

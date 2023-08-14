@@ -51,7 +51,7 @@
           <br>
           <br>
 
-          <label for="category">Skill</label> 
+          <label for="category">Subject</label> 
           <br>
         <a  href="#" data-toggle="tooltip" data-html="true" data-original-title="<em> Add New </em>"><i class="cil-plus"></i></a>
         <br>
@@ -62,9 +62,7 @@
           </select>
 
         <br><input type="submit" value="Save" class="btn btn-success"><br>
-      </form>
-    
+      </form> 
   </div>
-</div>
-  
+</div>  
 @stop
