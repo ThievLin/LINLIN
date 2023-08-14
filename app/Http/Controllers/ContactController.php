@@ -31,7 +31,6 @@ class ContactController extends Controller
                 'phone' => 'required',
     ]);
 
-        // $input = $request->all();
         $contact = Contact::all();
         $input = $request->all();
     
