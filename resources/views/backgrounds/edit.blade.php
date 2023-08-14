@@ -2,7 +2,7 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Edit Student</div>
+  <div class="card-header"><h3>Edit Background student</h3></div>
 
   <div class="card-body">
        
@@ -12,14 +12,14 @@
 
       <input type="hidden" name="id" id="id" value="{{$backgrounds->id}}" id="id" />
 
-        <br><label>highschool</label><br>
+        <br><label>Highschool</label><br>
         <br><input type="text" name="highschool" id="highschool" value="{{$backgrounds->highschool}}" class="form-control">
 
               @if ($errors->has('highschool'))
                 <span class="text-danger">{{ $errors->first('highschool') }}</span><br>
               @endif
 
-        <br><label>graduate</label><br>
+        <br><label>Year graduate</label><br>
         <br><input type="text" name="graduate" id="graduate" value="{{$backgrounds->graduate}}" class="form-control">
 
               @if ($errors->has('graduate'))

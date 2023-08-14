@@ -2,14 +2,15 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">subjects Page</div>
+  <div class="card-header"><h3>Subjects Page</h3></div>
   <div class="card-body">
         <div class="card-body">
-        <h6 class="card-text">Skill : {{ $subjects->Skill }}</h6>
-        <h6 class="card-text">time : {{ $subjects->time }}</h6>
-        <h6 class="card-text">Teacher : {{ $subjects->teacher }}</h6>
+        <p class="card-text">Subject : {{ $subjects->Skill }}</p>
+        <p class="card-text">Time To Study : {{ $subjects->time }}</p>
+        <p class="card-text">Teacher Name : {{ $subjects->teacher }}</p>
         <br>
-        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student"> Back </a>
+        <hr>
+        <a href="{{ url('/subject') }}" title="Back to Subject"><button class="btn btn-info btn-sm">--Back--</button></a>
   </div>
     <hr>
   </div>

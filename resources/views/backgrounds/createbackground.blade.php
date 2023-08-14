@@ -2,33 +2,29 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Create New Background</div>
+  <div class="card-header"><h3>Create New Background</h3></div>
   <div class="card-body">
        
       <form action="{{ url('background') }}" method="post">
         {!! csrf_field() !!}
         
-        <label for="category">name</label> 
+        <label for="category">Name of student</label> 
         <a  href="#" data-toggle="tooltip" data-html="true" data-original-title="<em> Add New </em>"><i class="cil-plus"></i></a>
         <br>
           <select class="form-control" name="student_id">
               @foreach($students as $value)
-                <option value="{{$value->id}}">{{$value->lastname}}</option>                                       
+                <option value="{{$value->id}}">{{$value->firstname}} {{$value->lastname}}</option>                                       
               @endforeach
           </select>
-
-          @if ($errors->has('student_id'))
-            <span class="text-danger">{{ $errors->first('student_id') }}</span><br>
-          @endif
           
-        <br><label>highschool</label><br>
+        <br><label>Highschool</label><br>
         <br><input type="text" name="highschool" id="highschool" class="form-control">
 
-         @if ($errors->has('highschool'))
+         @if ($errors->has('Highschool'))
             <span class="text-danger">{{ $errors->first('highschool') }}</span><br>
          @endif
 
-        <br><label>graduate</label><br>
+        <br><label>Year graduate</label><br>
         <br><input type="text" name="graduate" id="graduate" class="form-control">
 
           @if ($errors->has('graduate'))

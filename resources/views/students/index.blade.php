@@ -7,20 +7,30 @@
                     <div class="card-header">
                         <h2> Laravel 9 CRUD (Students Information)</h2>
                         <br>
+                        <div class="col-md-4">
+                            <form action={{ route('student.index') }} method="GET">
+                                <div class="input-group">
+                                    <input type="text" name="gender" placeholder="All Genders">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                          </div>
                         <br>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Go to subject">
                             Subject
                         </a>
                         <br>
                         <br>
-                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Go to Student">
                             Student
                         </a>
-                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Go to Contact">
                             Contact
                         </a>
                         
-                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Go to Background">
                             Background
                         </a>
                         <br>
@@ -37,8 +47,8 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Firstname</th>
-                                            <th>Lastname</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
                                             <th>Gender</th>
                                             <th>Age</th>
                                             <th>Date of Birst</th>

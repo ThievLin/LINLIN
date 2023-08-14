@@ -2,7 +2,7 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Edit contact</div>
+  <div class="card-header"><h3>Edit contact</h3></div>
 
   <div class="card-body">
        
@@ -19,14 +19,14 @@
                   <span class="text-danger">{{ $errors->first('address') }}</span><br>
               @endif
 
-        <br><label>email</label><br>
+        <br><label>Email</label><br>
         <br><input type="text" name="email" id="email" value="{{$contacts->email}}" class="form-control">
 
               @if ($errors->has('email'))
                 <span class="text-danger">{{ $errors->first('email') }}</span><br>
               @endif
 
-        <br><label>phone</label><br>
+        <br><label>Phone Number</label><br>
         <br><input type="text" name="phone" id="phone" value="{{$contacts->phone}}" class="form-control">
 
               @if ($errors->has('phone'))

@@ -2,21 +2,21 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Create New Students</div>
+  <div class="card-header"><h3>Create New Students</h3></div>
   <div class="card-body">
        
       <form action="{{ url('student') }}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}
 
         
-        <br><label>Firstname</label><br>
+        <br><label>First Name</label><br>
         <br><input type="text" name="firstname" id="firstname" class="form-control">
 
          @if ($errors->has('firstname'))
             <span class="text-danger">{{ $errors->first('firstname') }}</span><br>
          @endif
 
-        <br><label>Lastname</label><br>
+        <br><label>Last Name</label><br>
         <br><input type="text" name="lastname" id="lastname" class="form-control">
 
           @if ($errors->has('lastname'))
@@ -47,15 +47,11 @@
 
           <br><label>Image</label><br>
           <br><input type="file" name="image" id="image" class="form-control">
-
-          {{-- @if ($errors->has('image'))
-            <span class="text-danger">{{ $errors->first('image') }}</span><br>
-          @endif --}}
         
           <br>
           <br>
 
-          <label for="category">Skill</label> 
+          <label for="category">Subject</label> 
           <br>
         <a  href="#" data-toggle="tooltip" data-html="true" data-original-title="<em> Add New </em>"><i class="cil-plus"></i></a>
         <br>
@@ -66,9 +62,7 @@
           </select>
 
         <br><input type="submit" value="Save" class="btn btn-success"><br>
-      </form>
-    
+      </form> 
   </div>
-</div>
-  
+</div>  
 @stop
