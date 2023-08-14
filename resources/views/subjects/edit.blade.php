@@ -2,7 +2,7 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Create New Students</div>
+  <div class="card-header"><h3>Edit Subject</h3></div>
   <div class="card-body">
        
     <form action="{{ url('subject/' .$subjects->id) }}" method="post">
@@ -11,21 +11,21 @@
 
       <input type="hidden" name="id" id="id" value="{{$subjects->id}}" id="id" />
         
-        <br><label>Skill</label><br>
+        <br><label>Subject</label><br>
         <br><input type="text" name="Skill" id="Skill" value="{{$subjects->Skill}}" class="form-control">
 
          @if ($errors->has('Skill'))
             <span class="text-danger">{{ $errors->first('Skill') }}</span><br>
          @endif
 
-        <br><label>time</label><br>
+        <br><label>Time to study</label><br>
         <br><input type="text" name="time" id="time" value="{{$subjects->time}}" class="form-control">
 
           @if ($errors->has('time'))
             <span class="text-danger">{{ $errors->first('time') }}</span><br>
           @endif
 
-        <br><label>teacher</label><br>
+        <br><label>Teacher Name</label><br>
         <br><input type="text" name="teacher" id="teacher" value="{{$subjects->teacher}}" class="form-control">
 
           @if ($errors->has('teacher'))

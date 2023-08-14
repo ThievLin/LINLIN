@@ -2,15 +2,15 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">Students Page</div>
+  <div class="card-header"><h3>Contact Page</h3></div>
   <div class="card-body">
         <div class="card-body">
-        <h6 class="card-text">Address : {{ $contacts->address }}</h6>
-        <h6 class="card-text">Email : {{ $contacts->email }}</h6>
-        <h6 class="card-text">Phone : {{ $contacts->phone }}</h6>
+        <p class="card-text">Address : {{ $contacts->address }}</p>
+        <p class="card-text">Email : {{ $contacts->email }}</p>
+        <p class="card-text">Phone Number : {{ $contacts->phone }}</p>
         <br>
-        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student"> Back </a>
-
+        <hr>
+        <a href="{{ url('/contact') }}" title="Back to Contact"><button class="btn btn-info btn-sm">--Back--</button></a>
   </div>
     <hr>
   </div>

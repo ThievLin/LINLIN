@@ -8,10 +8,22 @@ use App\Models\Subject;
 
 class StudentController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $students = Student::all();
         $subjects = Subject::all();
+
+        $sort = $request->input('sort', 'id'); // Default sorting by ID
+        $gender = $request->input('gender'); // Get the value of the gender parameter
+    
+        $query = Student::orderBy($sort);
+    
+        if ($gender) {
+                $query->whereRaw("LOWER(gender) LIKE ?", ['%' . strtolower($gender) . '%']);
+        }
+    
+        $students = $query->get();
+        
         return view ('students.index', ['students' => $students, 'subjects' => $subjects]);
     }
 
@@ -46,7 +58,7 @@ class StudentController extends Controller
 
         Student::create($input);
         return redirect('student')->with('flash_message' , 'Student Addedd!');
-}
+    }
 
     public function show($id)
     {

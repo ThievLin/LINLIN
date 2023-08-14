@@ -8,25 +8,25 @@
                         <h2>Subject Students</h2>
                         <br>
                         <br>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Go to Subject">
                             Subject
                         </a>
                         <br>
                         <br>
-                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Go to Student">
                             Student
                         </a>
-                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Go to Contact">
                             Contact
                         </a>
                         
-                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Go to Background">
                             Background
                         </a>
                         <br>
                         <br>
                         <div class="card-body">
-                            <a href="{{ url('/subject/create') }}" class="btn btn-success btn-sm" title="Add New Student">
+                            <a href="{{ url('/subject/create') }}" class="btn btn-success btn-sm" title="Add new Student">
                                 Add New Subjects 
                             </a>
                             <br/>
@@ -37,8 +37,8 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Subject </th>
-                                            <th>Time for study</th>
-                                            <th>Teacher name</th>
+                                            <th>Time to study</th>
+                                            <th>Teacher Name</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>

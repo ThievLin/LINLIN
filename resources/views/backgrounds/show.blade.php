@@ -2,13 +2,14 @@
 @section('content')
   
 <div class="card" style="margin:20px;">
-  <div class="card-header">background Page</div>
+  <div class="card-header"><h3>Background Page</h3></div>
   <div class="card-body">
         <div class="card-body">
-        <h6 class="card-text">highschool : {{ $backgrounds->highschool }}</h6>
-        <h6 class="card-text">graduate : {{ $backgrounds->graduate }}</h6>
+        <p class="card-text">Highschool : {{ $backgrounds->highschool }}</p>
+        <p class="card-text">Year graduate : {{ $backgrounds->graduate }}</p>
         <br>
-        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Add New Student"> Back </a>
+        <hr>
+        <a href="{{ url('/background') }}" title="Back to Background"><button class="btn btn-info btn-sm">--Back--</button></a>
   </div>
     <hr>
   </div>
