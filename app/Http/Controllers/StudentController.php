@@ -13,16 +13,16 @@ class StudentController extends Controller
         $students = Student::all();
         $subjects = Subject::all();
 
-        $sort = $request->input('sort', 'id'); // Default sorting by ID
-        $gender = $request->input('gender'); // Get the value of the gender parameter
+        // $sort = $request->input('sort', 'id'); // Default sorting by ID
+        // $gender = $request->input('gender'); // Get the value of the gender parameter
     
-        $query = Student::orderBy($sort);
+        // $query = Student::orderBy($sort);
     
-        if ($gender) {
-                $query->whereRaw("LOWER(gender) LIKE ?", ['%' . strtolower($gender) . '%']);
-        }
+        // if ($gender) {
+        //         $query->whereRaw("LOWER(gender) LIKE ?", ['%' . strtolower($gender) . '%']);
+        // }
     
-        $students = $query->get();
+        // $students = $query->get();
         
         return view ('students.index', ['students' => $students, 'subjects' => $subjects]);
     }

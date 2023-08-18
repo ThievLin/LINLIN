@@ -13,7 +13,7 @@
         <p class="card-text">Age : {{ $students->age }}</p>
         <p class="card-text">Date of Birst : {{ $students->dob }}</p>
         <hr>
-        <p class="card-text">Photo Of Students : <img src="{{ asset('/storage/images/students/'.$students->image) }}" width= '450' height='500' /> </p>
+        <p class="card-text">Photo Of Students : <img src="{{ asset('/storage/images/students/'.$students->image) }}" width= '400' height='450' /> </p>
         <br>
         <hr>
         <a href="{{ url('/student') }}"  title="Back to Student"> <button class="btn btn-info btn-sm">--Back--</button></a>

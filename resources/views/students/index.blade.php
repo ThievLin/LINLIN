@@ -7,7 +7,7 @@
                     <div class="card-header">
                         <h2> Laravel 9 CRUD (Students Information)</h2>
                         <br>
-                        <div class="col-md-4">
+                        {{-- <div class="col-md-4">
                             <form action={{ route('student.index') }} method="GET">
                                 <div class="input-group">
                                     <input type="text" name="gender" placeholder="All Genders">
@@ -16,7 +16,7 @@
                                     </div>
                                 </div>
                             </form>
-                          </div>
+                          </div> --}}
                         <br>
                         <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Go to subject">
                             Subject
