@@ -17,8 +17,8 @@ class BackgroundController extends Controller
 
     public function create()
     {
-        $data = Student::all();
-        return view('backgrounds.createbackground', ['students'=>$data] );
+        $students = Student::all();
+        return view('backgrounds.createbackground', ['students'=>$students] );
     }
 
     public function store(Request $request)

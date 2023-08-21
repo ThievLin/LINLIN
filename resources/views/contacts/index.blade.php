@@ -8,19 +8,19 @@
                         <h2> Contact Student</h2>
                         <br>
                         <br>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Go to Student">
+                        <a href="{{ url('/subject') }}" class="btn btn-primary btn-sm" title="Go to Student">
                             Subject
                         </a>
                         <br>
                         <br>
-                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Go to Student">
+                        <a href="{{ url('/student') }}" class="btn btn-info btn-sm" title="Go to Student">
                             Student
                         </a>
-                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Go to Student">
+                        <a href="{{ url('/contact') }}" class="btn btn-info btn-sm" title="Go to Student">
                             Contact
                         </a>
                         
-                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Go to Student">
+                        <a href="{{ url('/background') }}" class="btn btn-info btn-sm" title="Go to Student">
                             Background
                         </a>
                         <br>

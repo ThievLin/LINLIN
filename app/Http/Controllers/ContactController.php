@@ -18,8 +18,8 @@ class ContactController extends Controller
 
     public function create()
     {
-        $data = Student::all();
-        return view('contacts.createcontact', ['students'=>$data] );
+        $students = Student::all();
+        return view('contacts.createcontact', ['students'=>$students] );
     }
 
     public function store(Request $request)

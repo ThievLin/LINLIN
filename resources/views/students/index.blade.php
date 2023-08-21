@@ -18,19 +18,19 @@
                             </form>
                           </div> --}}
                         <br>
-                        <a href="{{ url('/subject') }}" class="btn btn-success btn-sm" title="Go to subject">
+                        <a href="{{ url('/subject') }}" class="btn btn-primary btn-sm" title="Go to subject">
                             Subject
                         </a>
                         <br>
                         <br>
-                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Go to Student">
+                        <a href="{{ url('/student') }}" class="btn btn-info btn-sm" title="Go to Student">
                             Student
                         </a>
-                        <a href="{{ url('/contact') }}" class="btn btn-success btn-sm" title="Go to Contact">
+                        <a href="{{ url('/contact') }}" class="btn btn-info btn-sm" title="Go to Contact">
                             Contact
                         </a>
                         
-                        <a href="{{ url('/background') }}" class="btn btn-success btn-sm" title="Go to Background">
+                        <a href="{{ url('/background') }}" class="btn btn-info btn-sm" title="Go to Background">
                             Background
                         </a>
                         <br>

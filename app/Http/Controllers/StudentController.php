@@ -12,25 +12,14 @@ class StudentController extends Controller
     {
         $students = Student::all();
         $subjects = Subject::all();
-
-        // $sort = $request->input('sort', 'id'); // Default sorting by ID
-        // $gender = $request->input('gender'); // Get the value of the gender parameter
-    
-        // $query = Student::orderBy($sort);
-    
-        // if ($gender) {
-        //         $query->whereRaw("LOWER(gender) LIKE ?", ['%' . strtolower($gender) . '%']);
-        // }
-    
-        // $students = $query->get();
         
         return view ('students.index', ['students' => $students, 'subjects' => $subjects]);
     }
 
     public function create()
     {
-        $data = Subject::all();
-        return view('students.create', ['subjects'=>$data] );
+        $subject = Subject::all();
+        return view('students.create', ['subjects'=>$subject] );
     }
 
     public function store(Request $request)
